@@ -1,0 +1,51 @@
+/* Body:
+This style will be appied in all body section
+*/
+body {
+    /* it removes the margin of the body section.*/
+    margin:0;
+    /* it sets the background color of the body for a variation of pink. */
+    background-color: #fce4ec ;
+}
+/* End Body*/
+
+/* Navbar:
+This style was created to display the pages navigations.
+I decided to use the ul structure because it is simple and flexible to implement. And it is very common to use it.
+*/
+ul {
+    /* it removes the bullet points from the list */
+    list-style-type: none;
+    /* it removes the default margin and padding of the ul elements */
+    margin: 0;
+    padding: 0;
+    /* it ensures the floating elements to stay inside the container */
+    overflow: hidden;
+    /* defines the background color to pink */
+    background-color: #d63384;
+    }
+    
+    li {
+    /*  it makes all the li elements to float left to create a horizontal navigation*/
+    float: left;
+    }
+    
+    li a {
+    /*  it makes all the element became a block and everything clickable*/
+    display: block;
+    /*  it sets the text color to white*/
+    color: white;
+    /* it centralize the text */
+    text-align: center;
+    /* it adds space arount the link */
+    padding: 14px 16px;
+    /* it removes the underline from the link */
+    text-decoration: none;
+    }
+    
+    /* it changes the background color every time we hover over the element */
+    li a:hover {
+    background-color: #e83e8c;
+    }
+
+/* End Navbar */
