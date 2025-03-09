@@ -1,0 +1,31 @@
+.warning-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning-card {
+    background-color: #fad645;
+    border: 2px solid #d8b93f;
+    padding: 15px;
+    margin:10px 10px 10px 0px; 
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+.warning-card h2 {
+    color: #8b0000;
+    text-align: center;
+}
+.warning-card p {
+    color: #333;
+    text-align: justify;
+} 
+
+@media screen and (max-width: 768px) {
+    .warning-card-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

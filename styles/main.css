@@ -6,6 +6,8 @@ body {
     margin:0;
     /* it sets the background color of the body for a variation of pink. */
     background-color: #fce4ec ;
+    /* it adds a space on the botton so the footer does not hide the content of the page */
+    padding-bottom: 60px;
 }
 /* End Body*/
 
@@ -59,7 +61,7 @@ footer {
     background-color: #ffd1dc;
     /*  it sets the text color to a variation of black*/
     color: #4a4a4a;
-    /* it centralize the text */
+    /* it centralizes the text */
     text-align: center;
     /* it adds space inside the footer, px means pixels */
     padding: 2px;
@@ -67,7 +69,72 @@ footer {
     position: fixed;
     /* it makes the footer stays on the very bottom of the page */
     bottom: 0;
-    /* it makes the width of the footer be the same width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
-    width: 100%;
 }  
 /* End Footer */
+
+/* I used this style to give more focus the content that goes to the body */
+.container {
+    /* it sets the width of the container using 80% of the total width of the page */
+    width: 80%;
+    /* it sets the margin to get the remaining space outside the content and divide it equaly in the margin */
+    margin: auto;
+    /* it adds a margin just on the top of the element, px means pixels */
+    margin-top: 20px;
+    /*it defines the background color to a variation of white */
+    background-color: white;
+    /* it adds space inside the element, px means pixels */
+    padding: 20px;
+    /* it turns the border of the pictures rounded by 10px */
+    border-radius: 10px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* it makes the width of the element be the same width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
+.width100 {
+    width: 100%;
+}
+
+/* this block of code applies the style inside if the width of the page is 768px or smaller.
+This value is set to include a good style for tables and smartphones.
+It is used to make the content responsive.  */
+@media screen and (max-width: 768px) {
+    /* this block modifies the style set for the width50, it makes the width 100%. 
+    In small screens, if I use 50% the content gets too small, so it adjusts to 100%. */
+    .width50 {
+        /* the important tag is to make sure the style is applied, it override all previous styles */
+        width: 100% !important;
+    }
+}
+
+/* it makes the width of the element be 50% of the width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
+.width50 {
+    width: 50%;
+}  
+
+/* it styles all the h2 elements of the pages */
+h2 {
+    /*  it sets the text color to a variation of pink*/
+    color:#d63384;
+    /* it centralizes the text */
+    text-align: center;
+    /* it makes the text bold*/
+    font-weight: bold;
+}
+
+/* it styles all the images */
+img {
+    /* it turns the border of the pictures rounded by 10px */
+    border-radius: 10px;
+}
+
+/* I created this style to set all the references used to the website, to make it more discrete */
+.reference-text {
+    /*  it sets the text color to a variation of black*/
+    color: #4a4a4a;
+    /* it sets the font to a smaller version */
+    font-size: small;
+    /* it adds space between the word and the edge of the element, px means pixels */
+    padding: 1px;
+}

@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title on the browser tab-->
     <title>Home - You are not alone!</title>
     <!-- css styles reference -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/warning-cards.css">
 </head>
 <body>
     <!-- using of header/main/footer to make the structure more organized -->
     <header>
+        <!-- menu navigation -->
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="identifyingAbuse.html">Identifying Abuse</a></li>
@@ -19,9 +22,57 @@
         </ul>
     </header>
     <main>
-
+        <!-- Using of div tag to group the elements of the main section.
+         The class container is used to give focus to the main section.-->
+        <div class="container">
+            <!-- using of h2 to titles -->
+            <h2>Welcome to You are not alone</h2>
+            <!-- using of p to paragraphs -->
+            <p>We are here to offer help, resources, and a safe space for women who have experienced any form of abuse. You are not alone! We believe in providing the support and guidance necessary to help you regain your confidence, independence, and well-being. Our goal is to create a strong and caring community where every woman feels empowered to rebuild her life without fear.</p>
+            <p>Explore our website to find professional resources, connect with other survivors, and read inspiring stories of resilience. Whether you need immediate assistance, legal advice, or just someone to listen, we are here for you. Every step forward is a step toward healing, and you do not have to walk this path alone.</p>
+            <h2>Why is Fighting for Women's Freedom Important?</h2>
+            <p>Advocating for women's freedom is essential in building a just and equal society. Empowering women means ensuring their rights, safety, and opportunities to thrive without fear or limitations. Here are some key facts to raise awareness and inspire change.</p>
+            <!-- Using od div to group the informations.
+              I use diferent the style of card in yellow to make the information more appealing-->
+            <div class="warning-card-container">
+                <!-- this div is used to make all the divs inside it to respect the width of 50% of the page -->
+                <div class="width50">
+                    <!-- this div is used to make the div inside it to have the 100% of width of the width of 50% of the page -->
+                    <div class="width100">
+                        <!-- the style of warning-card transforms the div into yellow card to give-->
+                        <div class="warning-card">1 in 4 adolescent girls is abused by their partners.</div>
+                    </div>
+                    <div class="width100">
+                        <div class="warning-card">70% of women in conflict, war, and humanitarian crisis, experience gender-based violence.</div>
+                    </div>
+                    <div class="width100">
+                        <div class="warning-card">Globally, female genital mutilation has increased by 15% compared to data from eight years ago.</div>
+                    </div>
+                    <div class="width100">
+                        <div class="warning-card">91% of trafficking victims for sexual exploitation are females.</div>
+                    </div>
+                    <div class="width100">
+                        <div class="warning-card">Less than 40% of the women who experience violence seek help of any sort.</div>
+                    </div>
+                    <!--I used a paragraph to insert the information reference -->
+                    <p class="reference-text">The information has been sourced from the <a href="https://www.unwomen.org/en/articles/facts-and-figures/facts-and-figures-ending-violence-against-women" target="_blank">UN Women</a>.</p>
+                </div>
+                <!-- this div is used to make the div inside it to have the 100% of width of the width of 50% of the page 
+                 It is aligninh the picture and the text to the center of the div
+                -->
+                <div class="width50"  style="align-content: center; text-align: center;">
+                    <!-- it uses the image in the folder images and sets the width of the image in 50% -->
+                    <img src="/images/vecteezy_multiethnic-women-locked-in-cages-a-symbol-of_12958656.jpg" width="50%"/>
+                    <!-- I used a paragraph to insert the image reference, so the content stays on the bottom of the image -->
+                    <p>
+                        <a href="https://www.vecteezy.com/free-vector/multiethnic" target="_blank" class="reference-text">Multiethnic Vectors by Vecteezy</a>
+                    </p>
+                </div>
+            </div>
+        </div>   
     </main>
-    <footer>
+    <!-- footer section -->
+    <footer class="width100">
         <p>&copy; 2025 You are not alone. All rights reserved.</p>
     </footer>
 </body>
