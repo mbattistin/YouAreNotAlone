@@ -37,7 +37,7 @@ ul {
     color: white;
     /* it centralize the text */
     text-align: center;
-    /* it adds space arount the link */
+    /* it adds space around the link, px means pixels */
     padding: 14px 16px;
     /* it removes the underline from the link */
     text-decoration: none;
@@ -49,3 +49,25 @@ ul {
     }
 
 /* End Navbar */
+
+/* Footer 
+Style for the footer section.
+The footer is important to display copyright and useful information
+*/
+footer {
+    /* defines the background color to a variation of pink */
+    background-color: #ffd1dc;
+    /*  it sets the text color to a variation of black*/
+    color: #4a4a4a;
+    /* it centralize the text */
+    text-align: center;
+    /* it adds space inside the footer, px means pixels */
+    padding: 2px;
+    /* it makes the footer fixed in the position even when the user scrolls the page */
+    position: fixed;
+    /* it makes the footer stays on the very bottom of the page */
+    bottom: 0;
+    /* it makes the width of the footer be the same width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
+    width: 100%;
+}  
+/* End Footer */
