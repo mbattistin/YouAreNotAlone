@@ -1,0 +1,85 @@
+
+/* styles the main container for the card */
+.image-card {
+    /* it displays the elements inside this one to have flexible position, side by side*/
+    display: flex;
+    /* it aligns the elements to the center */
+    align-items: center;
+    /*  it sets the background color to white*/
+    background-color: white;
+    /* it adds vertical space */
+    margin: 15px 0;
+    /* it adds space inside the element, px means pixels */
+    padding: 10px;
+    /* it turns the border of the element rounded by 10px */
+    border-radius: 10px;
+    /* it adds a shadow of black for 3D effect  */
+    box-shadow: 1px 2px 5px #ffd1dc;
+}
+
+/* Image Container */
+.image-card-image {
+    /* it makes the width of the element be the 20% of the space available */
+    width: 20%;
+    /* it aligns the text to the center */
+    text-align: center;
+}
+
+/* style of the img inside the .image-card */
+.image-card img {
+    /* it makes the width of the element be the 80% of the space available */
+    width: 80%;
+    /* it adjusts the image height to be proportional to the width */
+    height: auto;
+}
+
+
+/* card content*/
+.image-card-content {
+    /* it makes the width of the element be the 80% of the space available */
+    width: 80%;
+    /* it adds space inside the element, px means pixels */
+    padding: 10px;
+    /* it makes the text justify */
+    text-align: justify;
+}
+
+/* applies the style to all h3 inside the .image-card-content*/
+.image-card-content h3 {
+    /* it removes the margin on the top */
+    margin-top: 0px;
+    /*  it sets the text color to a variation of pink*/
+    color:#d63384;
+    /* it aligns the text to the center */
+    text-align: center;
+} 
+
+/* this block of code applies the style inside if the width of the page is 768px or smaller.
+This value is set to include a good style for tables and smartphones, it overrides the previous classes styles.
+It is used to make the content responsive. 
+Reference: https://www.w3schools.com/cssref/atrule_media.php*/
+@media screen and (max-width: 768px) {
+    .image-card {
+        flex-direction: column;  /* Stack elements vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .image-card-image {
+        /* it makes the width of the element be the 100% of the space available */
+        width: 100%; 
+    }
+
+    .image-card img {
+        /* it makes the width of the element be the 60% of the space available */
+        width: 60%; 
+    }
+
+    .image-card-content {
+    /* it makes the width of the element be the 100% of the space available */
+    width: 100%;
+    /* it adds space inside the element, px means pixels */
+    padding: 10px;
+    /* it makes the text justify */
+    text-align: justify;
+    }
+}

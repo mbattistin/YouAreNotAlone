@@ -15,7 +15,7 @@
 
 /* Warning card style */
 .warning-card {
-    /*  it sets the text color to a variation of yellow*/
+    /*  it sets the background color to a variation of yellow*/
     background-color: #fad645;
     /*  it gives the element a border with 2px and a variation of yellow*/
     border: 2px solid #d8b93f;
@@ -45,8 +45,9 @@
 } 
 
 /* this block of code applies the style inside if the width of the page is 768px or smaller.
-This value is set to include a good style for tables and smartphones.
-It is used to make the content responsive.  */
+This value is set to include a good style for tables and smartphones, it overrides the previous classes styles.
+It is used to make the content responsive. 
+Reference: https://www.w3schools.com/cssref/atrule_media.php*/
 @media screen and (max-width: 768px) {
     .warning-card-container {
         /* it displays the elements inside this one to the vertical alignment, so they do not become too small*/
