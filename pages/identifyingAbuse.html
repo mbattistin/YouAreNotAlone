@@ -1,28 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title on the browser tab-->
     <title>Identifying Abuse</title>
     <!-- css styles reference -->
     <link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/warning-flip-card.css">
+  </head>
+  <body>
     <!-- using of header/main/footer to make the structure more organized -->
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="identifyingAbuse.html">Identifying Abuse</a></li>
-            <li><a href="findHelp.html">Find Help</a></li>
-            <li><a href="histories.html">Histories</a></li>
-            <li><a href="contactUs.html">Contact us</a></li>
-        </ul>
+      <!-- menu navigation -->
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="identifyingAbuse.html">Identifying Abuse</a>
+        </li>
+        <li>
+          <a href="findHelp.html">Find Help</a>
+        </li>
+        <li>
+          <a href="histories.html">Histories</a>
+        </li>
+        <li>
+          <a href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
     </header>
     <main>
-
+       <!-- Using of div tag to group the elements of the main section.
+        The class container is used to give focus to the main section.-->
+      <div class="container">
+        <h2>Identifying Abuse</h2>
+        <div class="content-container">
+          <!-- Flip Cards Section -->
+          <div class="cards-container">
+            <!-- this div is used to make the div inside it to have the 100% of width of the width of 50% of the page -->
+            <div class="width100">
+              <!-- using of h2 to titles -->
+              <h2>Types of abuse</h2>
+              <!-- using of p to paragraphs -->
+              <p>Recognizing the different forms of abuse is the first step in protecting yourself and others. Educate yourself on the signs and understand if you or someone you know may be affected (Hover over the card for more details).</p>
+            </div>
+            <!-- Div that holds the child content and applies a 3D perspective -->
+            <div class="warning-flip-card">
+              <!-- This wraps the front and back of the card and it rotates 180 degrees when hovered  -->
+              <div class="warning-flip-card-inner">
+                <!-- Content for the front card -->
+                <div class="warning-flip-card-front">
+                  <h2>Sexual Violence</h2>
+                </div>
+                <!-- Content for the back card -->
+                <div class="warning-flip-card-back">
+                  <p>Any unwanted sexual behavior, including stalking, grooming, indecent exposure, and non-consensual sexual activities.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Psychological Abuse</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Threats, humiliation, intimidation, controlling behavior, and provoking fear.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Financial Abuse</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Theft, fraud, coercion, or misuse of a person's finances, such as withholding benefits or pressuring for inheritance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Institutional Abuse</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Mistreatment or neglect in an organization, including poor care standards and violation of human rights.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Neglect</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Failure to provide essential care, support, or necessities such as food, medication, and health services.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Exploitation</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Taking advantage of a person for personal gain, including forced labor, servitude, and human trafficking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Domestic Violence</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Controlling, coercive, or violent behavior by an intimate partner or family member.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Human Trafficking</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Forcibly moving and exploiting individuals for forced labor, sexual exploitation, or organ harvesting.</p>
+                </div>
+              </div>
+            </div>
+            <div class="warning-flip-card">
+              <div class="warning-flip-card-inner">
+                <div class="warning-flip-card-front">
+                  <h2>Hate Crime</h2>
+                </div>
+                <div class="warning-flip-card-back">
+                  <p>Criminal acts motivated by prejudice based on race, religion, gender identity, or other factors.</p>
+                </div>
+              </div>
+            </div>
+            <p class="width100 reference-text">The information below has been sourced from the Trust Board at <a href="https://southerntrust.hscni.net/involving-you/community-development-and-user-involvement/community-sector-training/adult-safeguarding-information-and-resources/adult-safeguarding/types-of-abuse/" target="_blank">Southern Trust</a>. </p>
+          </div>
+          <!-- Video Section -->
+          <div class="video-section">
+            <!-- using of h2 to titles -->
+            <h2>Cycle of Abuse</h2>
+            <!-- using p for paragraph -->
+            <p>For a deeper understanding of abuse, watch this insightful video by Kati Morton, a licensed therapist, discussing about abuse and its impact.</p>
+            <!-- It is used to display the video source. It is set a width,height and title for the video-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XRICIFc1Nb4" title="Understanding Abuse - Kati Morton"></iframe>
+            <!-- Using p and a for the video reference -->
+            <p class="reference-text">Video by <a href="https://www.youtube.com/@KatiMorton" target="_blank">Kati Morton</a>. </p>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-        <p>&copy; 2025 You are not alone. All rights reserved.</p>
+    <!-- footer section -->
+    <footer class="width100">
+      <p>&copy; 2025 You are not alone. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

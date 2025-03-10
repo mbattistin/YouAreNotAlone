@@ -1,31 +1,55 @@
+/* I used the site tutorial https://www.w3schools.com/css/default.asp as a guide to find out which css properties would be useful on my website.*/
+/* I separate the warning card layout because it will not be used in all pages. So it keeps the css cleaner. */
+
+/* Layout container for the cards */
 .warning-card-container {
+    /* it displays the elements inside this one to have flexible position, side by side*/
     display: flex;
+    /* it makes the elements inside this one to skip to the next row if there is no space. It does not make the elements become small. */
     flex-wrap: wrap;
+    /* it aligns the elements to the center */
     align-items: center;
+    /* it aligns the elements inside the container in the horizontal */
     justify-content: center;
 }
 
+/* Warning card style */
 .warning-card {
+    /*  it sets the text color to a variation of yellow*/
     background-color: #fad645;
+    /*  it gives the element a border with 2px and a variation of yellow*/
     border: 2px solid #d8b93f;
+    /* it adds space inside the element, px means pixels */
     padding: 15px;
+    /* it adds space outside the element, it gives 10px to the top, right and bottom part, but nothing on the left, px means pixels */
     margin:10px 10px 10px 0px; 
+    /* it turns the border of the element rounded by 10px */
     border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    /* it adds a shadow of black for 3D effect  */
+    box-shadow: 3px 3px 10px #00000033;
 
 }
+
+/* style for all h2 elements under the warning-card */
 .warning-card h2 {
+    /*  it sets the text color to a variation of red*/
     color: #8b0000;
+    /* it centralizes the text */
     text-align: center;
 }
+
+/* style for all p elements under the warning-card */
 .warning-card p {
-    color: #333;
+    /* it makes the text is justify in the element */
     text-align: justify;
 } 
 
+/* this block of code applies the style inside if the width of the page is 768px or smaller.
+This value is set to include a good style for tables and smartphones.
+It is used to make the content responsive.  */
 @media screen and (max-width: 768px) {
     .warning-card-container {
+        /* it displays the elements inside this one to the vertical alignment, so they do not become too small*/
         flex-direction: column;
-        text-align: center;
     }
 }

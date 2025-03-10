@@ -86,8 +86,8 @@ footer {
     padding: 20px;
     /* it turns the border of the pictures rounded by 10px */
     border-radius: 10px;
-    
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* it adds a shadow of black for 3D effect  */
+    box-shadow: 3px 3px 10px #00000033;
 }
 
 

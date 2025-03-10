@@ -1,0 +1,136 @@
+/* I used as guid the following tutorial: https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+/* I used the site tutorial https://www.w3schools.com/css/default.asp as a guide to find out which css properties would be useful on my website.*/
+/* I separate the flip card layout because it will not be used in all pages. So it keeps the css cleaner. */
+
+/* Layout container for flip cards and video */
+.content-container {
+    /* it displays the elements inside this one to have flexible position, side by side*/
+    display: flex;
+    /*it aligns the items to the top */
+    align-items: flex-start;
+    /* it adds space between the elements */
+    justify-content: space-between;
+    /* it adds space between the elements inside this one */
+    gap: 5px;
+    /* it makes the elements inside this one to skip to the next row if there is no space. It does not make the elements become small. */
+    flex-wrap: wrap;
+  }
+  
+  /* it makes sure cards take equal space */
+  .cards-container {
+    /* it displays the elements inside this one to have flexible position, side by side*/
+    display: flex;
+    /* it makes the elements inside this one to skip to the next row if there is no space. It does not make the elements become small. */
+    flex-wrap: wrap;
+    /* it adds space between the elements inside this one */
+    gap: 10px;
+    /*  it makes the section expand to use available space */
+    flex: 1;
+  }
+  
+  /* it makes sure video section does not become too small */
+  .video-section {
+    /*  it makes the section expand to use available space */
+    flex: 0.5;
+    /* it makes the video never get smaller than 300px  */
+    min-width: 300px;
+    /* it centralizes the text */
+    text-align: center;
+  }
+  
+  /* it adjusts the video */
+  .video-section iframe {
+    /* it makes the width of the element be the 100% of the space available */
+    width: 100%;
+    /* it turns the border of the element rounded by 10px */
+    border-radius: 10px;
+  }
+  
+  /* Flip Card Styles */
+  .warning-flip-card {
+    /* defines the background color to transparent */
+    background-color: transparent;
+     /* it makes the width of the element be fixed as 180px */   
+    width: 180px;
+     /* it makes the height of the element be fixed as 180px */   
+    height: 180px;
+    /* it creates a 3D effect when the card is flipping */
+    perspective: 1000px;
+  }
+  
+  /* The Rotating Inner Card */
+  .warning-flip-card-inner {
+    /* it makes the inner card stays inside the parent element  */
+    position: relative;
+    /* it makes the width of the element be the 100% of the space available */
+    width: 100%;
+    /* it makes the height of the element be the 100% of the space available */
+    height: 100%;
+    /* it centralizes the text */
+    text-align: center;
+    /* it flips the card over 0.6 seconds */
+    transition: transform 0.6s;
+    /* it keeps 3D efect while rotating */
+    transform-style: preserve-3d;
+  }
+  
+  /* Flip Card Hover Effect */
+  .warning-flip-card:hover .warning-flip-card-inner {
+    /* When you hover over the card, it flips 180 degrees*/
+    transform: rotateY(180deg);
+  }
+  
+  /* Cards style */
+  .warning-flip-card-front, .warning-flip-card-back {
+    /* it stacks the elements on top of each other */
+    position: absolute;
+    /* it makes the width of the element be the 100% of the space available */
+    width: 100%;
+    /* it makes the height of the element be the 100% of the space available */
+    height: 100%;
+    /* it hides the back side when the front is visible */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*it adds space inside the card */
+    padding: 10px;
+    /* it makes sure padding doesn’t change the card's size */
+    box-sizing: border-box;
+  }
+  
+  /* Front side of the card */
+  .warning-flip-card-front {
+    /* it defines the background color to a variation of yellow */
+    background-color: #fad645;
+    /*  it gives the element a border with 2px and a variation of yellow*/
+    border: 2px solid #d8b93f;
+    /* it turns the border of the element rounded by 10px */
+    border-radius: 10px;
+    /* all three styles centers the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   /* Backg side of the card */
+  .warning-flip-card-back {
+    /* it defines the background color to a variation of yellow */
+    background-color: #fad645;
+    /*  it gives the element a border with 2px and a variation of yellow*/
+    border: 2px solid #d8b93f;
+    /* it turns the border of the element rounded by 10px */
+    border-radius: 10px;
+    /* it sets the back flipped so it appears hidden */
+    transform: rotateY(180deg);
+    /* all three styles centers the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*it adds space inside the card */   
+    padding: 10px;
+  }
+  
+  /* applies the style to all h2 inside the  .warning-flip-card-front*/
+  .warning-flip-card-front h2 {
+    /*  it sets the text color to a variation of red*/
+    color: #8b0000;
+  }
