@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     /* it aligns the elements to the center */
     align-items: center;
-    /* it aligns the elements inside the container in the horizontal */
+    /* it aligns the elements on the center inside the container in the horizontal */
     justify-content: center;
 }
 

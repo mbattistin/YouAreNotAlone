@@ -1,0 +1,75 @@
+/* I used as guid the following tutorial: https://www.w3schools.com/howto/howto_css_cards.asp */
+/* I used the site tutorial https://www.w3schools.com/css/default.asp as a guide to find out which css properties would be useful on my website.*/
+/* I separate this card layout because it will not be used in all pages. So it keeps the css cleaner. */
+
+/* styles the main container for the card */
+.image-card-vertical-container {
+    /* it displays the elements inside this one to have flexible position, side by side*/
+    display: flex;
+    /* it makes the elements inside this one to skip to the next row if there is no space. It does not make the elements become small. */
+    flex-wrap: wrap;
+    /* it aligns the elements on the center inside the container in the horizontal */
+    justify-content: center;
+    /* it adds space of 20px between the elements */
+    gap: 20px;
+    /* it adds space inside the element, px means pixels */
+    padding: 10px;
+}
+
+/* card */        
+.image-card-vertical {
+    /*  it sets the background color to white*/
+    background-color:white;
+    /* it turns the border of the element rounded by 10px */
+    border-radius: 10px;
+    /* it adds a shadow of black for 3D effect  */
+    box-shadow: 0 4px 8px #00000033;
+    /* it makes sure that the content does not overflow */
+    overflow: hidden;
+    /* it makes the width of the element fixed by 320px */
+    width: 320px;
+    /* it makes the text is justify in the element */
+    text-align: justify;
+    /* it makes the hover effect smoother */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-card-vertical:hover {
+    /* it makes the card 5% larger when hovered */
+    transform: scale(1.05);
+}
+        
+.image {
+    /* it makes the width of the element be the 100% of the space available */
+    width: 100%;
+    /* it adjusts the image height to be 200px */
+    height: 200px;
+    /* it removes the border of the images */
+    border: none;
+}
+
+.image-card-vertical-content {
+    /* it adds space inside the element, px means pixels */
+    padding: 10px;
+}
+
+.icon-label-vertical-align {
+    /* it is used to align text and icon */
+    display: flex; 
+    align-items: center; 
+    /* it adds space of 5px between the elements */
+    gap:5px;
+}
+
+/* this block of code applies the style inside if the width of the page is 768px or smaller.
+This value is set to include a good style for tables and smartphones, it overrides the previous classes styles.
+It is used to make the content responsive. 
+Reference: https://www.w3schools.com/cssref/atrule_media.php*/
+@media screen and (max-width: 768px) {
+    .image-card-vertical-container {
+        /* it displays the elements inside this one to the vertical alignment, so they do not become too small*/
+        flex-direction: column;
+        /* it align the car in the center*/
+        align-items: center;
+    }
+}
