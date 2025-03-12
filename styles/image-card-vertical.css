@@ -8,8 +8,8 @@
     display: flex;
     /* it makes the elements inside this one to skip to the next row if there is no space. It does not make the elements become small. */
     flex-wrap: wrap;
-    /* it aligns the elements on the center inside the container in the horizontal */
-    justify-content: center;
+    /* it aligns the elements along the container in the horizontal */
+    justify-content: justify;
     /* it adds space of 20px between the elements */
     gap: 20px;
     /* it adds space inside the element, px means pixels */
