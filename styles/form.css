@@ -1,0 +1,52 @@
+label {
+    /* it makes the text bold */
+    font-weight: bold;
+    /* it gives 10px of top margin */
+    margin-top: 10px;
+    /* it makes the label  takes full width*/
+    display: block;
+}
+
+input, textarea {
+
+    width: 90%;
+    /* it gives 10px of space inside the element */
+    padding: 10px;
+    /* it gives 5px of top margin */
+    margin-top: 5px;
+    /*  it gives the element a border with 1px and a variation of grey*/
+    border: 1px solid #ccc;
+    /* it turns the border of the element rounded by 5px */
+    border-radius: 5px;
+}
+
+.error {
+    /*  it sets the text color to  red*/
+    color: red;
+    /* it gives 5px of top margin */
+    margin-top: 5px;
+}
+
+button {
+    /* it defines the background color to a variation of pink */
+    background-color: #d63384;
+    /*  it sets the text color to pink*/
+    color: white;
+    /* it removes the border */
+    border: none;
+    /* it gives 10px of space inside the element */
+    padding: 10px;
+    width: 90%;
+    /* it gives 15px of top margin */
+    margin-top: 15px;
+    /* it turns the border of the element rounded by 5px */
+    border-radius: 5px;
+    /*it changes the mouse cursor to a hand pointer  */
+    cursor: pointer;
+}
+
+/* when the button is hover */
+button:hover {
+    /* it defines the background color to a variation of pink */
+    background-color: #e83e8c;
+}
