@@ -88,30 +88,9 @@ footer {
     border-radius: 10px;
     /* it adds a shadow of black for 3D effect  */
     box-shadow: 3px 3px 10px #00000033;
+    /* it justify the text */
+    text-align: justify;
 }
-
-
-/* it makes the width of the element be the same width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
-.width100 {
-    width: 100%;
-}
-
-/* this block of code applies the style inside if the width of the page is 768px or smaller.
-This value is set to include a good style for tables and smartphones.
-It is used to make the content responsive.  */
-@media screen and (max-width: 768px) {
-    /* this block modifies the style set for the width50, it makes the width 100%. 
-    In small screens, if I use 50% the content gets too small, so it adjusts to 100%. */
-    .width50 {
-        /* the important tag is to make sure the style is applied, it override all previous styles */
-        width: 100% !important;
-    }
-}
-
-/* it makes the width of the element be 50% of the width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
-.width50 {
-    width: 50%;
-}  
 
 /* it styles all the h2 elements of the pages */
 h2 {
@@ -138,3 +117,25 @@ img {
     /* it adds space between the word and the edge of the element, px means pixels */
     padding: 1px;
 }
+
+/* it makes the width of the element be the same width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
+.width100 {
+    width: 100%;
+}
+
+/* this block of code applies the style inside if the width of the page is 768px or smaller.
+This value is set to include a good style for tables and smartphones.
+It is used to make the content responsive.  */
+@media screen and (max-width: 768px) {
+    /* this block modifies the style set for the width50, it makes the width 100%. 
+    In small screens, if I use 50% the content gets too small, so it adjusts to 100%. */
+    .width50 {
+        /* the important tag is to make sure the style is applied, it override all previous styles */
+        width: 100% !important;
+    }
+}
+
+/* it makes the width of the element be 50% of the width of the page. It uses the % to make sure it stretch along with the page width that can be variable */
+.width50 {
+    width: 50%;
+}  

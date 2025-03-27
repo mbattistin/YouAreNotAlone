@@ -60,8 +60,10 @@ It is used to make the content responsive.
 Reference: https://www.w3schools.com/cssref/atrule_media.php*/
 @media screen and (max-width: 768px) {
     .image-card {
-        flex-direction: column;  /* Stack elements vertically */
-        text-align: center; /* Center-align text */
+        /* it displays elements vertically */
+        flex-direction: column;  
+        /* it aligns text on the center */
+        text-align: center; 
     }
 
     .image-card-image {

@@ -22,8 +22,8 @@
     display: flex;
     /* it makes the elements inside this one to skip to the next row if there is no space. It does not make the elements become small. */
     flex-wrap: wrap;
-    /* it adds space between the elements inside this one */
-    gap: 10px;
+    /* it adds space between the elements inside this one and it uses the parent reference to set the gap */
+    gap: inherit;
     /*  it makes the section expand to use available space */
     flex: 1;
   }
@@ -34,8 +34,7 @@
     flex: 0.5;
     /* it makes the video never get smaller than 300px  */
     min-width: 300px;
-    /* it centralizes the text */
-    text-align: center;
+
   }
   
   /* it adjusts the video */
@@ -134,3 +133,4 @@
     /*  it sets the text color to a variation of red*/
     color: #8b0000;
   }
+

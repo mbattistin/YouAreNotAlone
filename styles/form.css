@@ -25,6 +25,8 @@ input, textarea {
     color: red;
     /* it gives 5px of top margin */
     margin-top: 5px;
+    /* it removes the bold from the previous style */
+    font-weight: normal;
 }
 
 button {
